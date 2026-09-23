@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard - ResumeAI</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><nav class="nav"><a class="brand" href="/static/dashboard.html">Resume<span>AI</span></a><div class="navlinks"><a href="/static/dashboard.html">Dashboard</a><a href="/static/jobs.html">Job Roles</a><a href="/static/upload.html">Analyze Resume</a><a href="/static/history.html">History</a><button id="logout" class="linkbtn">Logout</button></div></nav>
+<main class="container"><div class="page-head"><div><p class="eyebrow">RECRUITING WORKSPACE</p><h1>Dashboard</h1><p class="muted" id="welcome"></p></div><a class="btn primary" href="/static/upload.html">+ Analyze Resume</a></div>
+<div class="stats"><div class="stat"><span>Job roles</span><strong id="jobsCount">0</strong></div><div class="stat"><span>Resumes</span><strong id="resumeCount">0</strong></div><div class="stat"><span>Top score</span><strong id="topScore">—</strong></div></div>
+<section class="panel"><div class="panel-head"><h2>Recent resumes</h2><a href="/static/history.html">View history →</a></div><div id="recent" class="table-wrap"></div></section></main>
+<script src="/static/js/api.js"></script><script src="/static/js/dashboard.js"></script></body></html>

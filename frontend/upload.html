@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Analyze Resume - ResumeAI</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><nav class="nav"><a class="brand" href="/static/dashboard.html">Resume<span>AI</span></a><div class="navlinks"><a href="/static/dashboard.html">Dashboard</a><a href="/static/jobs.html">Job Roles</a><a class="active" href="/static/upload.html">Analyze Resume</a><a href="/static/history.html">History</a><button id="logout" class="linkbtn">Logout</button></div></nav>
+<main class="container"><div class="page-head"><div><p class="eyebrow">AI SCREENING</p><h1>Analyze a resume</h1><p class="muted">PDF or DOCX, up to 10 MB.</p></div></div>
+<section class="panel upload-panel"><form id="uploadForm"><label class="drop"><input id="resume" type="file" accept=".pdf,.docx" required><strong>Choose resume</strong><span id="fileName">PDF or DOCX</span></label><button class="btn primary full">Upload &amp; analyze</button></form><p id="msg" class="message"></p></section>
+<section id="results" class="panel hidden"><div class="panel-head"><div><h2 id="resultTitle">Results</h2><p class="muted">Ranked against your job roles.</p></div></div><div id="resultCards" class="results"></div></section></main>
+<script src="/static/js/api.js"></script><script src="/static/js/upload.js"></script></body></html>
